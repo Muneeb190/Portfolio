@@ -49,11 +49,13 @@ const ShowcaseSection = () => {
                             </a>
                         </div>
                         <div className='text-content'>
-                            <h2>
-                                Nebula AI
-                            </h2>
+                            <a href="https://nebulaai-bay.vercel.app/">
+                                <h2>
+                                    Nebula AI
+                                </h2>
+                            </a>
                             <p className='text-white-50 md:text-xl'>
-
+                                A decentralised supercomputer designed to meet the demand for next Gen AI
                             </p>
                         </div>
                     </div>
@@ -62,22 +64,22 @@ const ShowcaseSection = () => {
                     <div className='project-list-wrapper overflow-hidden'>
                         <div className='project' ref={project2}>
                             <div className='image-wrapper bg-[#c8d8dd]'>
-                                <a href="https://nebulaai-bay.vercel.app/" target='/'>
+                                <a href="https://addon-ai.vercel.app/" target='/'>
                                     <img src="/images/project2.png" alt="Library Management" />
                                 </a>
                             </div>
-                            <a href="https://nebulaai-bay.vercel.app/ target='/'">
+                            <a href="https://addon-ai.vercel.app/" target='/'>
                                 <h2>Addon AI</h2>
                             </a>
                         </div>
 
                         <div className='project' ref={project3}>
                             <div className='image-wrapper bg-[#ffe7eb]'>
-                                <a href="https://addon-ai.vercel.app/" target='/'>
+                                <a href="https://magma-theta.vercel.app/" target='/'>
                                     <img src="/images/project3.png" alt="YC Directory" />
                                 </a>
                             </div>
-                            <a href="https://addon-ai.vercel.app/" target='/'>
+                            <a href="https://magma-theta.vercel.app/" target='/'>
                                 <h2>Magma</h2>
                             </a>
                         </div>
