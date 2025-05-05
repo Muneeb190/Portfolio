@@ -44,14 +44,16 @@ const ShowcaseSection = () => {
                     {/* {left} */}
                     <div className='first-project-wrapper' ref={project1}>
                         <div className='image-wrapper'>
-                            <img src="/images/project1.png" alt="Ryde" />
+                            <a href="https://nebulaai-bay.vercel.app/" target='/'>
+                                <img src="/images/project1.png" alt="Library Management" />
+                            </a>
                         </div>
                         <div className='text-content'>
                             <h2>
-                                
+                                Nebula AI
                             </h2>
                             <p className='text-white-50 md:text-xl'>
-                                
+
                             </p>
                         </div>
                     </div>
@@ -65,7 +67,7 @@ const ShowcaseSection = () => {
                                 </a>
                             </div>
                             <a href="https://nebulaai-bay.vercel.app/ target='/'">
-                                <h2>Nebula AI</h2>
+                                <h2>Addon AI</h2>
                             </a>
                         </div>
 
@@ -76,7 +78,7 @@ const ShowcaseSection = () => {
                                 </a>
                             </div>
                             <a href="https://addon-ai.vercel.app/" target='/'>
-                                <h2>Addon AI</h2>
+                                <h2>Magma</h2>
                             </a>
                         </div>
                     </div>
