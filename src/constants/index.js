@@ -248,18 +248,17 @@ const navLinks = [
     {
       name: "insta",
       imgPath: "/images/insta.png",
-    },
-    {
-      name: "fb",
-      imgPath: "/images/fb.png",
+      link:"https://www.linkedin.com/in/muneeb-khan-703b05325/"
     },
     {
       name: "x",
       imgPath: "/images/x.png",
+      link:"https://x.com/MuneebKhan_24"
     },
     {
       name: "linkedin",
       imgPath: "/images/linkedin.png",
+      link:"https://www.linkedin.com/in/muneeb-khan-703b05325/"
     },
   ];
   
