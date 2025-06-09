@@ -1,4 +1,3 @@
-import React from 'react'
 import Hero from './components/sections/Hero'
 import Navbar from './components/Navbar'
 import ShowcaseSection from './components/sections/ShowcaseSection'
@@ -7,21 +6,42 @@ import TechStack from './components/sections/TechStack'
 import Testimonials from './components/sections/Testimonials'
 import Contact from './components/sections/Contact'
 import Footer from './components/sections/Footer'
+import { useEffect, useState } from 'react'
+import Loader from './components/loader'
+
+
 
 const App = () => {
+  const [loading, setloading] = useState(false)
+
+  useEffect(() => {
+    setloading(true)
+    setTimeout(() => {
+      setloading(false)
+    }, 2000)
+  }, [])
+
   return (
-    <main>
-      <div>
-        <Navbar/>
-        <Hero/>
-        <ShowcaseSection/>
-        <FeatureCards/>
-        <TechStack/>
-        <Testimonials/>
-        <Contact/>
-        <Footer/>
-      </div>
-    </main>
+    <>
+      {
+        loading ? (
+          <div id='main'>
+            <Loader />
+          </div>
+        ) : (
+          <div>
+            <Navbar />
+            <Hero />
+            <ShowcaseSection />
+            <FeatureCards />
+            <TechStack />
+            <Testimonials />
+            <Contact />
+            <Footer />
+          </div>
+        )
+      }
+    </>
   )
 }
 
