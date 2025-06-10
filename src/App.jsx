@@ -7,7 +7,12 @@ import Testimonials from './components/sections/Testimonials'
 import Contact from './components/sections/Contact'
 import Footer from './components/sections/Footer'
 import { useEffect, useState } from 'react'
-import Loader from './components/loader'
+import { RiseLoader } from 'react-spinners'
+
+
+
+
+
 
 
 
@@ -26,7 +31,10 @@ const App = () => {
       {
         loading ? (
           <div id='main'>
-            <Loader />
+            <RiseLoader 
+            color = {"#169976"}
+            size={20}
+            />
           </div>
         ) : (
           <div>
