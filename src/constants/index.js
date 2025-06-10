@@ -15,10 +15,6 @@ const navLinks = [
       name: "Testimonials",
       link: "#testimonials",
     },
-    {
-      name: "Contact",
-      link: "#contact",
-    },
   ];
   
   const words = [
@@ -252,7 +248,7 @@ const navLinks = [
     {
       name: "insta",
       imgPath: "/images/insta.png",
-      link:"https://www.linkedin.com/in/muneeb-khan-703b05325/"
+      link:"https://www.instagram.com/muneeb_khan.2/"
     },
     {
       name: "x",

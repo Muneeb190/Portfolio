@@ -1,5 +1,5 @@
 
-const Loader = () => {
+const Preloader = () => {
     return (
         <div class="wrapper">
             <div class="circle"></div>
@@ -12,4 +12,4 @@ const Loader = () => {
     )
 }
 
-export default Loader
+export default Preloader

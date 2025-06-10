@@ -7,7 +7,7 @@ import Testimonials from './components/sections/Testimonials'
 import Contact from './components/sections/Contact'
 import Footer from './components/sections/Footer'
 import { useEffect, useState } from 'react'
-import { RiseLoader } from 'react-spinners'
+import Preloader from './components/Preloader'
 
 
 
@@ -23,7 +23,7 @@ const App = () => {
     setloading(true)
     setTimeout(() => {
       setloading(false)
-    }, 2000)
+    }, 2500)
   }, [])
 
   return (
@@ -31,10 +31,7 @@ const App = () => {
       {
         loading ? (
           <div id='main'>
-            <RiseLoader 
-            color = {"#169976"}
-            size={20}
-            />
+            <Preloader />
           </div>
         ) : (
           <div>
