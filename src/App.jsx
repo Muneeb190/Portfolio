@@ -17,34 +17,32 @@ import Preloader from './components/Preloader'
 
 
 const App = () => {
-  const [loading, setloading] = useState(false)
+  const [loading, setloading] = useState(true)
 
   useEffect(() => {
-    setloading(true)
-    setTimeout(() => {
+    if(!document.getElementById('main2')) {
       setloading(false)
-    }, 2500)
+    }
   }, [])
 
   return (
     <>
-      {
-        loading ? (
-          <div id='main'>
-            <Preloader />
-          </div>
-        ) : (
-          <div>
-            <Navbar />
-            <Hero />
-            <ShowcaseSection />
-            <FeatureCards />
-            <TechStack />
-            <Testimonials />
-            <Contact />
-            <Footer />
-          </div>
-        )
+      {loading ? (
+        <div id='main'>
+          <Preloader />
+        </div>
+      ) : (
+        <div id='main2'>
+          <Navbar />
+          <Hero />
+          <ShowcaseSection />
+          <FeatureCards />
+          <TechStack />
+          <Testimonials />
+          <Contact />
+          <Footer />
+        </div>
+      )
       }
     </>
   )
